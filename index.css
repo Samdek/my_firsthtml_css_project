@@ -29,7 +29,7 @@ ul {
 ul li {
     text-transform: uppercase;
     display: inline;
-    font-size: 18px;
+    font-size: 15px;
     width: 90%;
     margin: auto;
 }
@@ -46,7 +46,7 @@ a:hover {
     background-color: blue;
 }
 
-section {
+#banner {
     background-image: url(images.jpeg);
     background-size: 100% auto;
     background-position: 0px;
@@ -65,15 +65,158 @@ h1 {
     color: blue;
 }
 
-p {
-    font-size: 20px;
-    font-style: oblique;
+.na {
+    font-size: 25px;
+    font-style: normal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: blue;
-    padding-top: 0px;
+    margin-bottom: -10px;
+    margin-top: 60px;
 }
+
+p {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(7, 7, 216);
+}
+
+.co {
+    font-size: 14px;
+}
+
+.mo {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.no {
+    margin-bottom: -10px;
+}
+
+.fa {
+    margin-bottom: -10px;
+}
+
 
 span a {
     border: 1px solid;
-    border-radius: 20px;
+    border-radius: 10px;
     font-weight: 700;
+}
+
+form {
+    width: 400px;
+    text-align: center;
+    background-image: url(rooom.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px auto;
+    border-radius: 4px;
+}
+
+.sicr {
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+}
+
+input[type=text], input[type=tel] {
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+    font-weight: 200px;
+    padding: 7px 0px;
+    height: 18px;
+    color: white;
+    outline: none;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.986);
+    outline: none;
+    color: blue;
+    padding: 12px 0;
+    outline: none;
+}
+
+input[type=submit]:hover {
+    color: white;
+    background-color: blue;
+    text-transform: uppercase;
+}
+
+select {
+    width: 70%;
+    border-radius: 5px;
+    padding :2px 0;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.mos {
+    color: white;
+    font-style: normal;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+label {
+    font-size: 13px;
+    color: white;
+}
+
+
+::placeholder {
+    color :white;
+    opacity: 0.7;
+    font-size: 10px;
+}
+
+#card {
+    text-align: center;
+    border: 1px solid;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 0 10px 0 blue;
+    background-color: rgba(7, 7, 216, 0.1);
+}
+
+#card h3 {
+    text-transform: uppercase;
+    font-size: 26px;
+    color: darkblue;
+    margin-top: 15px;
+}
+
+#card h4 {
+    text-transform: uppercase;
+    font-size: small;
+    margin-top: -25px;
+    color: blue;
+}
+
+.CP {
+    width: 200px;
+    height: 210px;
+    border-radius: 200px;
+    margin-bottom: -55px;
+    margin-top: 10px;
+}
+
+.logo {
+    border-radius: 30px;
+    width: 35px;
+    height: 35px;
+    display: inline;
+    padding: 15px 5px;
+    margin-bottom: -30px;
 }
