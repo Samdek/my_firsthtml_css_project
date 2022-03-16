@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Navigation Bar Project</title>
+        <title>First Project</title>
         <link rel="stylesheet" href="index.css">
     </head>
+
     <body>
-        <h2>Navigation Bar Project</h2>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about_us">About Us</a></li>
-                <li><a href="#contact_us">Contact Us</a></li>
-                <li><a href="#register">Register</a></li>
-                <li><a href="#login">Login</a></li>
-            </ul>
-        </nav>
+        <header>
+            <h2>My First Html & Css Project</h2>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about_us">About Us</a></li>
+                    <li><a href="#contact_us">Contact Us</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <section id="banner">
             <h1>ApSam Tech Institute</h1>
             <h3>Learning made easy</h3>
-            <span><a>Get Started</a></span>
+            <a>Get Started</a>
         </section>
+
         <form>
-            <h4 class="sicr">Student Identity Card Registration</h4>
-            <label for="fname" id="fname">First Name: </label>
-            <input type="text" name="fname" id="fname" placeholder="(Enter your first name e.g Samuel)">
-            <label for="lname">Last Name: </label>
-            <input type="text" name="lname" id="lname" placeholder="(Enter your last name e.g Adekoya)"> 
-            <label for="number">Phone Number: </label>
-            <input type="tel" name="number" id="number" placeholder="(Enter your phone number e.g +1234567890)"> 
-            <label for="dept">Faculty: </label>
-            <input type="text" name="dept" id="course" placeholder="(Enter your faculty e.g Arts & Design)"> 
-            <label for="dept">Department: </label>
-            <input type="text" name="dept" id="course" placeholder="(Enter your department e.g Graphics Design)"> 
-            <p class="mos">Select your mode of study:</p>
+            <h4 class="form_caption">Student Identity Card Registration</h4>
+            <label for="first_name" id="first_name">First Name: </label>
+            <input type="text" name="student_data_form" id="first_name" placeholder="(Enter your first name e.g Samuel)">
+            <label for="last_name">Last Name: </label>
+            <input type="text" name="student_data_form" id="last_name" placeholder="(Enter your last name e.g Adekoya)"> 
+            <label for="faculty">Faculty: </label>
+            <input type="text" name="student_data_form" id="faculty" placeholder="(Enter your faculty e.g Arts & Design)"> 
+            <label for="department">Department: </label>
+            <input type="text" name="student_data_form" id="department" placeholder="(Enter your department e.g Graphics Design)"> 
+            <label for="level">Level: </label>
+            <input type="tel" name="student_data_form" id="level" placeholder="(Enter your level e.g 200)"> 
+            <p class="mode_of_study">Select your mode of study:</p>
             <select>
                 <option value="choose">Choose your mode</option>
-                <option value="Part Time">Part Time</option>
-                <option value="Full Time">Full Time</option>
+                <option value="part_time">Part Time</option>
+                <option value="full_time">Full Time</option>
             </select>
             <input type="submit">
         </form>
+
         <section id="card">
-            <div id="sch_det">
-                <img src="20220314_141244.jpg" alt="ApSam Logo" class="logo">
-                <h3>ApSam Tech Institute</h2>
+            <div id="school_details">
+                <img src="20220314_141244.jpg" alt="ApSam Logo" class="school_logo">
+                <h3>ApSam Tech Institute</h3>
+                <h5>www.apsamtech.com</h5>
             </div>
                 <h4>Student Identification Card</h4>
-                <h5>www.apsamtech.com</h5> <hr>
-            <div id="stu_det">  
-                <p class="na">Adekoya Samuel</p>
-                <p class="no">+23457167345</p>
-                <p class="fa">Art & Designs</p>
-                <p class="co">Graphics Design</p>
-                <p class="mo">Full Time</p>
+            <div id="student_details">  
+                <p class="name">Adekoya Samuel</p>
+                <p class="faculty">Art & Designs</p>
+                <p class="department">Graphics Design</p>
+                <p class="level">400</p>
+                <p class="mode">Full Time</p> 
             </div> 
-            <div id="stu_pic">
-                <img src="sam 3.jpeg" alt="Candidate Picture" class="CP">
-            </div>     
+            <img src="sam 3.jpg" alt="Candidate Picture" class="student_picture"> 
         </section>
+
         <table>
             <caption>Student Data</caption>
             <thead>
