@@ -48,7 +48,7 @@ a:hover {
 }
 
 #banner {
-    background-image: url(images.jpeg);
+    background-image: url(img/images.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0;
@@ -98,12 +98,14 @@ a:hover {
 }
 
 form {
-    width: 45%;
+    width: 25em;
     text-align: center;
-    background-image: url(rooom.jpeg);
+    background-color: rgba(0, 0, 140, 0.848);
+    background-image: url(img/rooom.jpeg);
+    background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0px auto;
+    margin: 5em auto;
 }
 
 label {
@@ -168,38 +170,46 @@ input[type=submit]:hover {
 
 #card {
     text-align: center;
-    width: 500px;
-    height: 320px;
-    margin: 30px auto;
+    max-width: 23em;
+    height: 15em;
+    margin: 0 auto;
     border: 1px solid lightblue;
     padding: 0px 10px;
-    box-shadow: 0 0 5px 1px rgb(154, 154, 248);
-    background-image: url(images.jpeg);
+    box-shadow: 0 0 3px 1px rgb(154, 154, 248);
+    background-image: url(img/images.jpeg);
+    background-color: rgba(34, 34, 251, 0.104);
+    background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 6px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-areas: 
+                "logo schdet"
+                "title title"
+                "studet img";
+   grid-template-columns: 9em 13em;
+   grid-column-gap: 0;
 }
 
 .school_logo {
-    width: 80px;
-    height: 70px;
-    float: left;
-    margin: 0 5px;
+    margin-top: 0.6em;
+    margin-left: 1.2em;
+    grid-area: logo;
     border-radius: 50px;
+    max-width: 3.5em;
 }
 
 #school_details {
-    background-color: yellow;
-    height: 75px;
-    background-color: rgba(255, 255, 255, 0.685);
+    grid-area: schdet;
+
+    grid-column: 2 / 3;
 }
 
 #school_details h3 {
     text-transform: uppercase;
-    font-size: 24px;
     color: darkblue;
-    padding-top: 5px;
     margin-bottom: 0;
+    font-size:1rem;
 }
 
 #school_details h5 {
@@ -209,6 +219,7 @@ input[type=submit]:hover {
 }
 
 #card h4 {
+    grid-area: title;
     text-transform: uppercase;
     font-size: small;
     margin-top: 17px;
@@ -216,26 +227,30 @@ input[type=submit]:hover {
     width: auto;
     padding: 5px 0;
     color: white;
-    clear: both;
 }
 
 #card #student_details {
-    float: left;
-    display: inline;
-    background-color: rgba(255, 255, 255, 0.664);
+    grid-area: studet;
+    font-size: 0.7rem;
+    background-color: rgba(239, 255, 242, 0.798);
+    max-height: 100px;
 }
 
 .name, .level, .faculty, .department, .mode {
-    margin: 5px;
-    padding: 2px 50px;
+    margin: 2px;
+    padding: 1.5px 10px;
     font-size: larger;
     color: rgb(0, 0, 146);
 }
 
 .student_picture {
-    width: 180px;
-    height: 160px;
-    float: right;
+    max-width: 200px;
+    max-height: 100px;
+    grid-area: image;
+    align-items: center;
+    grid-row: 3;
+    grid-column: 2;
+    margin-left: auto;
 }
 
 caption {
@@ -247,14 +262,14 @@ caption {
 
 table {
     width: 85%;
-    margin: 50px auto;
+    margin:50px auto;
     background-color: white;
     border-collapse: collapse;
     box-shadow: 0 0 3px 1px rgb(0, 0, 87);
 }
 
 th {
-    padding: 15px 20px;
+    padding: 10px 15px;
     font-size: 13px;
     font-weight: bolder;
     text-transform: uppercase;
@@ -279,3 +294,4 @@ td:hover {
 tr:nth-child(even) {
     background-color: rgba(94, 94, 94, 0.1);
 }
+
